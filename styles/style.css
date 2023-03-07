@@ -19,11 +19,12 @@
 }
 body{
     list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
 }
 nav{
-    /* display: flex;
-    justify-content: space-between; 
-    align-items: center; */
+   
     padding: 2rem;
     
 }
@@ -36,7 +37,9 @@ nav{
 .main-menu{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
 nav ul{
     width: 300px;
     margin: auto;
@@ -49,8 +52,17 @@ nav ul{
     font-size: 17px;
     border-radius: 15px;
     height: 350px;
+    font-weight: 500;
+    position: absolute;
+    top: -500px;
     
 }
+.active{
+    top: 70px;
+    left: 40px;
+    transition: .2s ease-in-out;
+ 
+ }
 
 .hr{
     width: 250px;
@@ -61,13 +73,7 @@ nav ul a{
     text-decoration: none;
     color: white;
 }
-li:last-child{
-    background: var(--cyan);
-    padding: .8rem 8rem;
-    text-align: center;
-    border-radius: 20px;
 
-}
 .illustration{
     height: 250px;
     background: url(/images/illustration-working.svg);
@@ -90,12 +96,14 @@ h1{
   font-size: 3.5rem;
   text-align: center;
   padding: 1rem 3rem;
+  font-weight: 700;
 
 }
 .section-one p{
     text-align: center;
     font-size: 20px;
     padding: 1rem 3rem;
+    font-weight: 300;
     /* word-spacing: .3rem; */
 }
 .section-one a{
@@ -136,8 +144,9 @@ h1{
     margin: auto;
     padding: 0 1rem;
     color: var(--grayish-violet);
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 3px;
+    
 
 
 }
@@ -175,8 +184,8 @@ h1{
 }
 .card{
     width: 300px;
-    height: 250px;
-    margin: 2rem auto;
+    height: 270px;
+    margin: 3rem auto;
     background: white;
     display: flex;
     flex-direction: column;
@@ -185,12 +194,14 @@ h1{
     position: relative;
     
 }
-/* .card::after{
+.card_one::after, .card_two::after{
     content: "";
-    width: 10px;
-    height: 15px;
+    width: 7px;
+    height: 55px;
     background: var(--cyan);
-} */
+    position: absolute;
+    bottom: -55px;
+}
 .card img{
     background: var(--dark-violet) ;
     padding: .8rem;
@@ -207,7 +218,7 @@ h1{
 .card p{
     font-size: 17px;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     color: var(--grayish-violet);
 }
 .boost{
@@ -281,9 +292,32 @@ h1{
     nav{
         padding: 2rem 8rem;
     }
+    nav ul{
+       top: 0;
+       /* background: transparent; */
+       flex-direction: row;
+       color: var(--cyan);
+       width: 80%;
+       height: 80px;
+       right: 50px;
+       justify-content: start;
+
+    }
+    .right-nav{
+        display: flex;
+        /* justify-self: flex-end; */
+        
+    }
+    .hr{
+        display: none;
+    }
+    .toggle{
+        display: none;
+    }
    .header{
      display: flex;
      flex-direction:row-reverse;
+    
      /* justify-content: space-evenly; */
    }
    .illustration{
@@ -331,6 +365,27 @@ h1{
    }
    .cards{
     flex-direction: row;
+    justify-content: center;
+    height: 400px;
+     
+   }
+   .card{
+       margin: 0 25px;
+   }
+   .card_one::after,
+   .card_two::after{
+     right:-5px;
+    
+   }
+   .card_two { 
+       align-self: center;
+   }
+   .card_three{
+    align-self: flex-end;
+   }
+   .card img{
+    left: 20px;
+   
    }
    .boost{
     background: url(/images/bg-boost-desktop.svg);
@@ -338,5 +393,20 @@ h1{
    }
    .footer{
     flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem 12rem;
+   
+   }
+   .footer ul{
+    text-align: justify;
+   }
+   .footer ul li a:hover{
+      color: var(--cyan);
+      cursor: pointer;
+   }
+   .socials:hover{
+     color: var(--cyan);
+     cursor: pointer;
    }
 }
