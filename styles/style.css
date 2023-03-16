@@ -50,10 +50,22 @@ nav ul {
   font-weight: 500;
   position: absolute;
   top: -500px;
+  /* font-weight: 700; */
+}
+.right-nav{
+    text-align: center;
+}
+.sign-up{
+    padding: .7rem 7.5rem;
+    border-radius: 20px;
+    background: var(--cyan);
+    margin-top: 15px;
+   
 }
 .active {
-  top: 70px;
-  left: 40px;
+  top: 40px;
+  /* left: 5%; */
+  margin: auto;
   transition: 0.2s ease-in-out;
 }
 
@@ -303,7 +315,8 @@ h1 {
 @media only screen and (min-width: 960px) {
   nav {
     padding: 2rem 8rem;
-    /* justify-content: space-between; */
+    display: flex;
+
   }
   nav ul {
     top: 0;
@@ -311,14 +324,24 @@ h1 {
     flex-direction: row;
     color: var(--cyan);
     width: 80%;
-    height: 80px;
+    height: 40px;
     right: 50px;
+    position: static;
+   
   }
   .right-nav {
     display: flex;
-    /* margin-left: 50px; */
-    /* position: absolute;
-        right: 20px; */
+    text-align:left;
+    /* justify-content: flex-end; */
+    
+   
+  }
+  .sign-up{
+    margin-top: 0;
+    padding: 2px 0;
+    width: 100px;
+    height: 25px;
+    text-align: center;
   }
   nav ul a {
     color: var(--grayish-violet);
@@ -341,19 +364,21 @@ h1 {
   .section-one {
     width: 50%;
     margin: 0 3rem;
-    padding-right: 100px;
+    /* padding-right: 100px; */
   }
   .section-one h1 {
     display: block;
     font-size: 4.5rem;
-    padding: 0 5rem;
+    padding: 0 3rem;
     text-align: left;
+    width: 600px;
     color: var(--very-dark-blue);
   }
   .section-one p {
-    padding: 0 5rem 1rem 5rem;
+    padding: 0 9rem 1rem 3rem;
     text-align: left;
     color: var(--grayish-violet);
+    width: 600px;
   }
   .section-one a {
     align-self: flex-start;
@@ -386,6 +411,9 @@ h1 {
   }
   .copy {
     padding: 0.8rem 3rem;
+  }
+  .section{
+    padding-bottom: 5rem ;
   }
   .section-two h2 {
     color: var(--very-dark-blue);
