@@ -100,10 +100,13 @@ nav ul a {
   flex-direction: column;
 }
 h1 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   padding: 10px 25px;
   font-weight: 700;
+}
+.section-one h2{
+  text-align: center;
 }
 .section-one p {
   text-align: center;
