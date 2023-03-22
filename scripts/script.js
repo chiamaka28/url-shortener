@@ -12,11 +12,14 @@ toggleBtn.addEventListener('click', function (e){
 
 linkBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  
   if (linkInput.value) {
+    console.log(linkInput.value);
     fetch(`https://api.shrtco.de/v2/shorten?url=${linkInput.value}`)
       .then((res) => {
         if (!res.ok) throw new Error("url not valid");
         return res.json();
+        console.error(Error);
       })
       .then((data) => {
         console.log(data);
@@ -27,7 +30,9 @@ linkBtn.addEventListener("click", function (e) {
 });
 
 function updateUI(result) {
+  
   const output = `<div class="output"><p class="old-link">${linkInput.value}<p>
+                    
                         <p class="new-link">${result}</p>
                         <div><button class="copy" id="copy">copy</button></div>
                     </div>`;
@@ -44,3 +49,4 @@ function updateUI(result) {
     console.log(e.target);
   });
 }
+       
