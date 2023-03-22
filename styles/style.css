@@ -38,7 +38,7 @@ nav {
 }
 
 nav ul {
-  width: 300px;
+  width: 320px;
   margin: auto;
   background-color: var(--dark-violet);
   list-style: none;
@@ -58,7 +58,9 @@ nav ul {
     text-align: center;
 }
 .sign-up{
-    padding: .7rem 7.5rem;
+    width: 250px;
+    height: 40px;
+    padding: 5px 0;
     border-radius: 20px;
     background: var(--cyan);
     margin-top: 15px;
