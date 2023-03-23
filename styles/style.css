@@ -197,8 +197,9 @@ h1 {
 }
 .copy {
   margin-bottom: 1rem;
-  margin: auto 1rem;
-  padding: 0.8rem 7rem;
+  margin: auto auto;
+  padding: 0.8rem 0;
+  width: 250px;
   background: var(--cyan);
   border: none;
   color: white;
