@@ -249,10 +249,10 @@ h1 {
 .card_two::after {
   content: "";
   width: 7px;
-  height: 40px;
+  height: 55px;
   background: var(--cyan);
   position: absolute;
-  bottom: -55px;
+  bottom: -40px;
 }
 .card img {
   background: var(--dark-violet);
