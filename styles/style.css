@@ -32,7 +32,7 @@ nav {
 .mobile-nav{
   display: flex;
   justify-content: center;
-  
+
 }
 .toggle {
   background-image: url(/images/icon-hamburger.svg);
@@ -86,7 +86,7 @@ nav ul a {
 }
 
 .illustration {
-  height: 250px;
+  height: 300px;
   background: url(/images/illustration-working.svg);
   background-size: contain;
   background-repeat: no-repeat;
