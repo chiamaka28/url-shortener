@@ -24,17 +24,16 @@ nav {
   padding: 1.5rem;
   
 }
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .toggle {
   background-image: url(/images/icon-hamburger.svg);
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-}
-.main-menu {
-  display: flex;
-  justify-content: space-between;
-  /* position: relative; */
-  
 }
 
 nav ul {
@@ -51,8 +50,8 @@ nav ul {
   height: 350px;
   font-weight: 500;
   position: absolute;
-  top: -500px;
-  /* font-weight: 700; */
+  top: -600px;
+ 
 }
 .right-nav{
     text-align: center;
