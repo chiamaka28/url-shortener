@@ -29,6 +29,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.mobile-nav{
+  display: flex;
+  justify-content: center;
+  
+}
 .toggle {
   background-image: url(/images/icon-hamburger.svg);
   width: 20px;
@@ -37,8 +42,9 @@ nav {
 }
 
 nav ul {
-  width: 320px;
-  margin: auto;
+  width: 80%;
+  max-width: 350px;
+  /* margin: auto; */
   background-color: var(--dark-violet);
   list-style: none;
   display: flex;
@@ -57,23 +63,20 @@ nav ul {
     text-align: center;
 }
 .sign-up{
-    width: 250px;
-    height: 40px;
-    padding: 5px 0;
+    padding: 10px 80px;
     border-radius: 20px;
     background: var(--cyan);
     margin-top: 15px;
    
 }
 .active {
-  top: 40px;
-  /* left: 5%; */
+  top: 60px;
   margin: auto;
   transition: 0.2s ease-in-out;
 }
 
 .hr {
-  width: 250px;
+  width: 80%;
   height: 1px;
   background: var(--gray);
 }
