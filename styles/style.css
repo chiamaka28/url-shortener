@@ -225,6 +225,7 @@ h1 {
 }
 .section-two h2 {
   font-size: 30px;
+  margin-top: 30px;
 }
 .section-two p {
   text-align: center;
@@ -235,9 +236,10 @@ h1 {
 .cards {
   display: flex;
   flex-direction: column;
+  padding: 3rem 0;
 }
 .card {
-  width: 300px;
+  width: 70%;
   height: 270px;
   margin: 2rem auto;
   background: white;
@@ -246,6 +248,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
+  border-radius: 10px;
 }
 .card_one::after,
 .card_two::after {
@@ -255,6 +258,7 @@ h1 {
   background: var(--cyan);
   position: absolute;
   bottom: -55px;
+  
 }
 .card img {
   background: var(--dark-violet);
@@ -269,7 +273,7 @@ h1 {
   font-size: 20px;
 }
 .card p {
-  font-size: 18px;
+  font-size: 19px;
   text-align: center;
   padding: 1rem 1.5rem;
   color: var(--grayish-violet);
