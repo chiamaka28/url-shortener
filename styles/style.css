@@ -63,7 +63,7 @@ nav ul {
     text-align: center;
 }
 .sign-up{
-    padding: 10px 80px;
+    padding: 10px 70px;
     border-radius: 20px;
     background: var(--cyan);
     margin-top: 15px;
@@ -226,6 +226,7 @@ h1 {
 .section-two h2 {
   font-size: 30px;
   margin-top: 30px;
+  text-align: center;
 }
 .section-two p {
   text-align: center;
@@ -239,7 +240,7 @@ h1 {
   padding: 3rem 0;
 }
 .card {
-  width: 70%;
+  width: 80%;
   height: 270px;
   margin: 2rem auto;
   background: white;
@@ -266,7 +267,7 @@ h1 {
   width: 55px;
   border-radius: 50%;
   position: absolute;
-  top: -20px;
+  top: -25px;
   right: 40%;
 }
 .card h3 {
@@ -335,15 +336,30 @@ h1 {
   width: 20px;
 }
 @media only screen and (min-width: 600px) {
+  .card{
+    width: 60%;
+    max-width: 400px;
+  }
+ 
+.card img {
+  background: var(--dark-violet);
+  padding: 0.8rem;
+  width: 55px;
+  border-radius: 50%;
+  position: absolute; 
+  top: -25px;
+  right: 40%;
+}
 }
 
 @media only screen and (min-width: 960px) {
   nav {
-    padding: 2rem 8rem;
+    padding: 2rem 70px;
+
+  }
+  .main-menu{
     display: flex;
     justify-content: space-between;
-   
-
   }
   nav ul {
     top: 0;
